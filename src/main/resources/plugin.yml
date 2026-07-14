@@ -1,0 +1,25 @@
+name: TagsKeepers
+version: 1.4
+main: com.tagskeeper.Main
+api-version: '1.20'
+softdepend:
+  - PlaceholderAPI
+  - Vault
+
+commands:
+  tags:
+    description: Open tags menu
+    aliases:
+      - tag
+
+  reloadtags:
+    description: Reload plugin
+
+permissions:
+  tagskeeper.owner:
+    default: op
+  tagskeeper.perms.reload:
+    default: op
+  tagskeeper.bypass.price:
+    description: Bypass tag prices
+    default: op
